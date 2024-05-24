@@ -31,3 +31,40 @@ body {
     text-wrap: balance;
   }
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar {
+  background-color: #E5E7EB; /* bg-gray-200 */
+  padding: 48px 24px 24px; /* 48px top, 24px bottom */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* 24px gap between links */
+}
+
+.nav-links li {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
