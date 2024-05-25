@@ -39,10 +39,11 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #FFFFFF;
 }
 
 .navbar {
-  background-color: #E5E7EB; /* bg-gray-200 */
+  background-color: #ECF6FE; /* bg-gray-200 */
   padding: 48px 24px 24px; /* 48px top, 24px bottom */
 }
 
@@ -76,16 +77,18 @@ body, html {
 
 /* Ensure the header takes full width and has specific margins */
 .header-container {
-  width: 100%;
+  padding: 48px;
   text-align: center;
   background-color: #ECF6FE; /* Optional background color for contrast */
 }
 
 .main-title {
   font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 3rem; /* Adjust size as needed */
-  margin-bottom: 1rem;
+  max-width: 1200px; /* Constrain the width */
+  margin: 0 auto; /* Center the container */
+  font-weight: 800;
+  font-size: 5rem; /* Adjust size as needed */
+  margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -117,8 +120,8 @@ body, html {
   align-items: center;
   margin-top: 3rem;
   padding: 2rem;
-  border: 2px solid black;
-  border-top: none; /* Only show the left, right, and bottom border */
+  border: 3px solid black;
+  border-bottom: none; /* Only show the left, right, and bottom border */
   max-width: 600px;
   margin: 3rem auto 0; /* Center the container */
 }
