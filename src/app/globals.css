@@ -191,6 +191,9 @@ body, html {
 }
 
 .feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   list-style-type: none;
   padding: 0;
 }
@@ -200,6 +203,8 @@ body, html {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
 }
 
 .feature-image {
