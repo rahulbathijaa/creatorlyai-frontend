@@ -5,16 +5,24 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo">YT Creator Tools</div>
+        <Link href="/" legacyBehavior>
+          <a className="logo">YT Creator Tools</a>
+        </Link>
         <ul className="nav-links">
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" legacyBehavior>
+              <a>About</a>
+            </Link>
           </li>
           <li>
-            <Link href="/pricing">Pricing</Link>
+            <Link href="/pricing" legacyBehavior>
+              <a>Pricing</a>
+            </Link>
           </li>
           <li>
-            <Link href="/login">Login</Link>
+            <Link href="/login" legacyBehavior>
+              <a>Login</a>
+            </Link>
           </li>
         </ul>
       </div>
