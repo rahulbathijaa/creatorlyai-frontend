@@ -16,7 +16,7 @@ const Examples: React.FC = () => {
 
   return (
     <div className="examples-container">
-      <h2 className="examples-title">Built for YouTube Creators</h2>
+      <h2 className="examples-title">See it in action</h2>
       <div className="grid">
         {examplesData.map((example) => (
           <div
