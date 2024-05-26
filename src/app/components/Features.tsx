@@ -18,7 +18,7 @@ const Features: React.FC = () => {
           </ul>
         </div>
         <div className="feature-image">
-          <img src="/path/to/thumbnail-image.png" alt="Thumbnails feature" />
+          <img src="./youtubethumbnailexample.png" alt="Thumbnails feature" />
         </div>
       </div>
       <div className="feature-row">
@@ -35,7 +35,7 @@ const Features: React.FC = () => {
           </ul>
         </div>
         <div className="feature-image">
-          <img src="/path/to/description-image.png" alt="Descriptions feature" />
+          <img src="./youtubethumbnailexample.png" alt="Descriptions feature" />
         </div>
       </div>
     </section>
