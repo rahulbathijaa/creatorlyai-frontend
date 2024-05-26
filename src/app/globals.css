@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,7 +58,7 @@ body, html {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -103,11 +106,13 @@ body, html {
 
 .main-title {
   font-family: 'Syne', sans-serif;
-  max-width: 1200px; /* Constrain the width */
+  max-width: 1000px; /* Constrain the width */
   margin: 0 auto; /* Center the container */
-  font-weight: 800;
+  font-weight: 700;
   font-size: 5rem; /* Adjust size as needed */
   margin-bottom: 2rem;
+  line-height: 1; /* Remove spacing between lines */
+  letter-spacing: -0.02em; /* Adjust letter spacing */
 }
 
 .subtitle {
