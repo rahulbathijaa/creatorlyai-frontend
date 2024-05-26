@@ -209,11 +209,10 @@ body, html {
 .feature-row {
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1300px; /* Adjusted to match the container */
   align-items: flex-start;
   text-align: left;
   margin-bottom: 4rem; /* Add spacing between rows */
-
 }
 
 .feature-content {
@@ -269,6 +268,22 @@ body, html {
   max-width: 100%;
   border: 1px solid #ccc; /* Optional border for images */
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .feature-row {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .feature-content,
+  .feature-image {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .features-header {
+    font-size: 2rem; /* Adjust header size for smaller screens */
+  }
 }
 
 .examples-container {
