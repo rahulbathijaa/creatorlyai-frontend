@@ -4,38 +4,41 @@ const Features: React.FC = () => {
   return (
     <section className="features-container">
       <h2 className="features-header">Focus on content creation. We’ll handle the rest.</h2>
-      <div className="feature-row">
-        <div className="feature-content">
-          <h3 className="feature-title">Thumbnails</h3>
-          <p className="feature-body">Thumbnails made for the YouTube algorithm.</p>
-          <ul className="feature-list">
-            <li>Multiple options</li>
-            <li>Editable</li>
-            <li>Built for YT Algo</li>
-            <li>Multiple options</li>
-            <li>Editable</li>
-            <li>Built for YT Algo</li>
-          </ul>
+      <div className="features-content-wrapper">
+        <div className="feature-row">
+          <div className="feature-content">
+            <h3 className="feature-title">Thumbnails</h3>
+            <p className="feature-body">Thumbnails made for the YouTube algorithm.</p>
+            <ul className="feature-list">
+              <li>Multiple thumbnail options</li>
+              <li>Built for your video</li>
+              <li>Made in seconds</li>
+              <li>Multiple options</li>
+              <li>Editable</li>
+              <li>Built for YT Algo</li>
+            </ul>
+          </div>
+          <div className="feature-image">
+            <img src="./youtubethumbnailexample.png" alt="Thumbnails feature" />
+          </div>
         </div>
-        <div className="feature-image">
-          <img src="./youtubethumbnailexample.png" alt="Thumbnails feature" />
-        </div>
-      </div>
-      <div className="feature-row">
-        <div className="feature-content">
-          <h3 className="feature-title">Descriptions</h3>
-          <p className="feature-body">With links and all that.</p>
-          <ul className="feature-list">
-            <li>Multiple options</li>
-            <li>Editable</li>
-            <li>Built for YT Algo</li>
-            <li>Multiple options</li>
-            <li>Editable</li>
-            <li>Built for YT Algo</li>
-          </ul>
-        </div>
-        <div className="feature-image">
-          <img src="./youtubethumbnailexample.png" alt="Descriptions feature" />
+        <div className="feature-row">
+          <div className="feature-image">
+            <img src="./youtubethumbnailexample.png" alt="Descriptions feature" />
+          </div>
+          <div className="feature-content">
+            <h3 className="feature-title">Descriptions</h3>
+            <p className="feature-body">Create YouTube descriptions tailored for the algorithm without the work.</p>
+            <ul className="feature-list">
+              <li>Multiple options</li>
+              <li>CTAs & Links (coming soon)</li>
+              <li>Built specifically for your video</li>
+              <li>Multiple options</li>
+              <li>Editable</li>
+              <li>Built for YT Algo</li>
+            </ul>
+          </div>
+          
         </div>
       </div>
     </section>
