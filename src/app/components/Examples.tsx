@@ -44,9 +44,11 @@ const Examples: React.FC = () => {
               alt={`Example ${selectedExampleData.id}`}
               className="overlay-image"
             />
-            <p className="overlay-description">
-              {selectedExampleData.description}
-            </p>
+            {selectedExampleData.description.split('\n').map((paragraph, index) => (
+              <p key={index} className="overlay-description">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       )}
