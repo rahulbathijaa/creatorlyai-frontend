@@ -23,11 +23,12 @@ const Header: React.FC = () => {
       <h1 className="main-title">A Modern Way to Optimize YouTube Content</h1>
       <p className="subtitle">Generate YouTube thumbnails and descriptions in seconds</p>
       <button className="signup-button">Sign up</button>
+      <button className="upload-button">Try uploading your own video</button>
       <div
         className="upload-container"
         style={{ backgroundImage: `url(${currentImage})` }}
       >
-        <button className="upload-button">Try uploading your own video</button>
+        
       </div>
     </div>
   );
