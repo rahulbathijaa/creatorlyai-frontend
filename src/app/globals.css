@@ -47,6 +47,13 @@ body, html {
   padding: 48px 24px 24px; /* 48px top, 24px bottom */
 }
 
+.footer {
+  background-color: #2E2E37;
+  padding: 48px 24px;
+  color: white;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,14 +70,25 @@ body, html {
   color: inherit; /* Inherit the color from the parent element */
 }
 
-.nav-links 
-.footer-links{
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem; /* 24px gap between links */
 }
 
 .nav-links  li {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem; /* 24px gap between links */
+}
+
+.footer-links  li {
   font-family: 'Familjen Grotesk', sans-serif;
   font-weight: 400;
   font-size: 1rem;

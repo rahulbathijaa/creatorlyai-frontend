@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
           <a className="logo">YT Creator Tools</a>
         </Link>
         <ul className="footer-links">
-          <li>
+          {/* <li>
             <Link href="/about" legacyBehavior>
               <a>About</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/pricing" legacyBehavior>
               <a>Pricing</a>
