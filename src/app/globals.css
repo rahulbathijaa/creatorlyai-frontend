@@ -188,8 +188,7 @@ body, html {
 
 .features-container {
   background-color: #FBEAEF; /* Optional background color */
-  padding: 4rem 0;
-  
+  padding: 3rem 0;
 }
 
 .features-header {
@@ -207,7 +206,6 @@ body, html {
   justify-content: space-between;
   max-width: 1400px;
   align-items: flex-start;
-  margin-bottom: 4rem;
   text-align: left;
 }
 
@@ -219,7 +217,6 @@ body, html {
 .feature-title {
   font-family: 'Syne', sans-serif;
   text-align: left;
- 
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -267,10 +264,11 @@ body, html {
   border-radius: 10px;
 }
 
-
 .examples-container {
-  padding: 2rem;
+  padding: 3rem;
   background-color: #ECFEEC;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .examples-title {
@@ -288,6 +286,7 @@ body, html {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  padding-bottom: 24px;
 }
 
 @media (min-width: 640px) {
