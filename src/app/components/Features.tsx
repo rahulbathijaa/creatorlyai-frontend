@@ -13,7 +13,7 @@ const Features: React.FC = () => {
               <li>Multiple thumbnail options</li>
               <li>Built for your video</li>
               <li>Made in seconds</li>
-              <li>Multiple options</li>
+              <li>Add personal assets (coming soon)</li>
               <li>Editable</li>
               <li>Built for YT Algo</li>
             </ul>
@@ -30,10 +30,10 @@ const Features: React.FC = () => {
             <h3 className="feature-title">Descriptions</h3>
             <p className="feature-body">Create YouTube descriptions tailored for the algorithm without the work.</p>
             <ul className="feature-list">
-              <li>Multiple options</li>
+              <li>Multiple description options</li>
               <li>CTAs & Links (coming soon)</li>
-              <li>Built specifically for your video</li>
-              <li>Multiple options</li>
+              <li>Built for your video</li>
+              <li>Affiliate links (coming soon)</li>
               <li>Editable</li>
               <li>Built for YT Algo</li>
             </ul>

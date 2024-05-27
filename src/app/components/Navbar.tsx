@@ -14,11 +14,11 @@ const Navbar: React.FC = () => {
               <a>About</a>
             </Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link href="/pricing" legacyBehavior>
               <a>Pricing</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/login" legacyBehavior>
               <a>Login</a>

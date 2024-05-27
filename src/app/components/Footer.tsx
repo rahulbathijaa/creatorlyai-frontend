@@ -15,12 +15,12 @@ const Footer: React.FC = () => {
             </Link>
           </li> */}
           <li>
-            <Link href="/pricing" legacyBehavior>
-              <a>Pricing</a>
+            <Link href="/login" legacyBehavior>
+              <a>Login</a>
             </Link>
           </li>
           <li>
-            <Link href="/contact" legacyBehavior>
+            <Link href="https://x.com/rahulbathijaa" legacyBehavior>
               <a>Contact</a>
             </Link>
           </li>

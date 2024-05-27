@@ -180,6 +180,35 @@ body, html {
   background-color: #a5a5a5;
 }
 
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 8rem; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .upload-button {
+    font-size: 1rem; /* Adjust button size */
+    padding: 0.5rem 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 3rem;
+    max-width: 370px;
+  }
+  
+  .upload-container {
+    padding: 8rem; /* Further reduce padding for very small screens */
+    max-width: 350px;
+  }
+
+  .upload-button {
+    font-size: 0.875rem; /* Further adjust button size */
+    padding: 0.5rem 0.75rem; /* Further adjust button padding */
+  }
+}
+
 .upload-text {
   font-family: 'Familjen Grotesk', sans-serif;
   font-weight: 400;
@@ -382,4 +411,10 @@ body, html {
 
 .overlay-description {
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .examples-container {
+    padding: 1rem;
+  }
 }
