@@ -30,8 +30,8 @@ const Header: React.FC = () => {
         className="upload-container"
         style={{ backgroundImage: `url(${currentImage})` }}
       >
-
       </div>
+      <div className="bottom-line"></div> 
     </div>
   );
 };

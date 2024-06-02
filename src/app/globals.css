@@ -35,7 +35,6 @@ body {
   }
 }
 
-
 /* globals.css */
 
 body, html {
@@ -109,7 +108,7 @@ body, html {
   max-width: 1000px; /* Constrain the width */
   margin: 0 auto; /* Center the container */
   font-weight: 700;
-  font-size: 5rem; /* Adjust size as needed */
+  font-size: 4rem; /* Adjust size as needed */
   margin-bottom: 2rem;
   line-height: 1; /* Remove spacing between lines */
   letter-spacing: -0.02em; /* Adjust letter spacing */
@@ -151,7 +150,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
-  padding: 13rem;
+  padding: 14rem;
   border: 5px solid black;
   border-bottom: none; /* Only show the left, right, and bottom border */
   max-width: 800px;
@@ -178,6 +177,12 @@ body, html {
 
 .upload-button:hover {
   background-color: #a5a5a5;
+}
+
+.bottom-line {
+  width: 100%;
+  height: 5px;
+  background-color: black; /* Adjust the color as needed */
 }
 
 @media (max-width: 768px) {
@@ -217,7 +222,7 @@ body, html {
 
 .features-container {
   background-color: #FBEAEF; /* Optional background color */
-  padding: 3rem 0;
+  padding-top: 3rem ;
 }
 
 .features-header {

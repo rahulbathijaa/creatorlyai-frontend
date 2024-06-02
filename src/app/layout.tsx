@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'YT Description Generator',
+  title: 'YouTuber AI | Generate Descriptions And Thumbnails In Seconds',
   description: 'Generate YouTube thumbnails and descriptions in seconds with just a video. Save time and focus on creating content.',
 };
 

@@ -40,8 +40,11 @@ const Features: React.FC = () => {
           </div>
           
         </div>
+        
       </div>
+      <div className="bottom-line"></div> 
     </section>
+    
   );
 };
 

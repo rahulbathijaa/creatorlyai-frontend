@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="container">
         <Link href="/" legacyBehavior>
-          <a className="logo">YT Creator Tools</a>
+          <a className="logo">Creatorly AI</a>
         </Link>
         <ul className="footer-links">
           {/* <li>

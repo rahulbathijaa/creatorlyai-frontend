@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="container">
         <Link href="/" legacyBehavior>
-          <a className="logo">YT Creator Tools</a>
+          <a className="logo">Creatorly AI</a>
         </Link>
         <ul className="nav-links">
           {/* <li>
