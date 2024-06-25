@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar">
-      <div className="container">
+    <nav className="bg-[#ECF6FE] py-12 px-6">
+      <div className="max-w-[1400px] mx-auto flex justify-between items-center">
         <Link href="/" legacyBehavior>
-          <a className="logo">Creatorly AI</a>
+          <a className="font-syne font-bold text-2xl no-underline text-inherit">Creatorly AI</a>
         </Link>
-        <ul className="nav-links">
+        <ul className="list-none flex gap-6">
           {/* <li>
             <Link href="/about" legacyBehavior>
               <a>About</a>
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
               <a>Pricing</a>
             </Link>
           </li> */}
-          <li>
+          <li className="font-familjen-grotesk font-normal text-base">
             <Link href="/login" legacyBehavior>
               <a>Login</a>
             </Link>

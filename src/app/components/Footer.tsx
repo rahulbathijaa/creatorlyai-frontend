@@ -3,23 +3,18 @@ import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="container">
+    <footer className="bg-[#2E2E37] py-12 px-6 text-white">
+      <div className="max-w-[1400px] mx-auto flex justify-between items-center">
         <Link href="/" legacyBehavior>
-          <a className="logo">Creatorly AI</a>
+          <a className="font-syne font-bold text-2xl no-underline text-inherit">Creatorly AI</a>
         </Link>
-        <ul className="footer-links">
-          {/* <li>
-            <Link href="/about" legacyBehavior>
-              <a>About</a>
-            </Link>
-          </li> */}
-          <li>
+        <ul className="list-none flex gap-12">
+          <li className="font-familjen-grotesk font-normal text-base">
             <Link href="/login" legacyBehavior>
               <a>Login</a>
             </Link>
           </li>
-          <li>
+          <li className="font-familjen-grotesk font-normal text-base">
             <Link href="https://x.com/rahulbathijaa" legacyBehavior>
               <a>Contact</a>
             </Link>
