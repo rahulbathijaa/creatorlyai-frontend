@@ -19,19 +19,27 @@ const Header: React.FC = () => {
   const currentImage = filteredExamples[currentImageIndex].src;
 
   return (
-    <div className="header-container">
-      <h1 className="main-title">A Modern Way to Optimize YouTube Content</h1>
-      <p className="subtitle">Generate YouTube thumbnails and descriptions in seconds</p>
-      <div className="button-group">
-        <button className="signup-button">Try it out</button>
-        <button className="upload-button">Sign up</button>
+    <div className="pt-12 text-center bg-[#ECF6FE]">
+      <h1 className="font-syne max-w-[1000px] mx-auto font-bold text-4xl mb-8 leading-none tracking-tight">
+        A Modern Way to Optimize YouTube Content
+      </h1>
+      <p className="font-familjen-grotesk font-normal text-xl mb-8">
+        Generate YouTube thumbnails and descriptions in seconds
+      </p>
+      <div className="flex gap-4 justify-center mb-8">
+        <button className="font-familjen-grotesk font-normal py-2 px-6 text-xl rounded-lg bg-[#FF3B30] text-white transition duration-300 hover:bg-[#fc2317]">
+          Try it out
+        </button>
+        <button className="bg-[#f0f0f0] text-black py-2 px-6 text-xl rounded-lg transition duration-300 hover:bg-[#a5a5a5]">
+          Sign up
+        </button>
       </div>
       <div
-        className="upload-container"
+        className="flex flex-col items-center mt-16 p-56 border-5 border-black border-b-0 max-w-[800px] mx-auto rounded-t-lg bg-cover bg-center transition duration-1000"
         style={{ backgroundImage: `url(${currentImage})` }}
       >
       </div>
-      <div className="bottom-line"></div> 
+      <div className="w-full h-1.25 bg-black mt-8"></div>
     </div>
   );
 };
