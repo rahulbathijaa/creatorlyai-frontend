@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-[#ECF6FE] py-12 px-6">
+    <nav className="bg-[#F3ECFE] py-12 px-6">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center">
         <Link href="/" legacyBehavior>
           <a className="font-syne font-bold text-2xl no-underline text-inherit">Creatorly AI</a>
