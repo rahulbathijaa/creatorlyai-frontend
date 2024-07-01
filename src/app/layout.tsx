@@ -1,11 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import localfont from 'next/font/local';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: 'YouTuber AI | Generate Descriptions And Thumbnails In Seconds',

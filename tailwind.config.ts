@@ -14,14 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'syne': ['Syne', 'sans-serif'],
-        'familjen-grotesk': ['Familjen Grotesk', 'sans-serif'],
-      },
-      spacing: {
-        '1.25': '5px',
-      },
-      borderWidth: {
-        '5': '5px',
+        norm: ["var(--font-norm)"],
       },
     },
   },
