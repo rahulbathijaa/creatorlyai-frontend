@@ -5,6 +5,7 @@ import examplesData from '../examplesData';
 
 const Examples: React.FC = () => {
   const [selectedExample, setSelectedExample] = useState<null | number>(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleOverlayClose = () => {
     setSelectedExample(null);
@@ -14,25 +15,48 @@ const Examples: React.FC = () => {
     ? examplesData.find((example) => example.id === selectedExample) 
     : null;
 
+  const handleScroll = (direction: 'left' | 'right') => {
+    const container = document.getElementById('scroll-container');
+    if (container) {
+      const scrollAmount = direction === 'left' ? -300 : 300;
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      setScrollPosition(container.scrollLeft + scrollAmount);
+    }
+  };
+
   return (
-    <div className="p-12 bg-[#ECFEEC] lg:px-40">
-      <h2 className="font-syne text-center pt-6 mx-auto font-bold text-2xl mb-4 pb-6">
+    <div className="p-12 bg-[#FFFFF] lg:px-40">
+      <h2 className="font-exo-2 text-left font-bold text-4xl mb-4 pb-6">
         See it in action
       </h2>
-      <div className="grid grid-cols-1 gap-4 pb-6 sm:grid-cols-2 lg:grid-cols-4">
-        {examplesData.map((example) => (
-          <div
-            key={example.id}
-            className="relative pt-[56.25%] overflow-hidden cursor-pointer"
-            onClick={() => setSelectedExample(example.id)}
-          >
-            <img
-              src={example.src}
-              alt={`Example ${example.id}`}
-              className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-            />
-          </div>
-        ))}
+      <div className="relative">
+        <button
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+          onClick={() => handleScroll('left')}
+        >
+          &lt;
+        </button>
+        <div id="scroll-container" className="flex overflow-x-scroll space-x-4 pb-6">
+          {examplesData.map((example) => (
+            <div
+              key={example.id}
+              className="relative w-80 h-80 flex-shrink-0 overflow-hidden cursor-pointer"
+              onClick={() => setSelectedExample(example.id)}
+            >
+              <img
+                src={example.src}
+                alt={`Example ${example.id}`}
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          ))}
+        </div>
+        <button
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+          onClick={() => handleScroll('right')}
+        >
+          &gt;
+        </button>
       </div>
 
       {selectedExampleData && (
