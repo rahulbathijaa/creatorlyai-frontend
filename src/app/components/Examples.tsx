@@ -25,7 +25,7 @@ const Examples: React.FC = () => {
   };
 
   return (
-    <div className="p-12 bg-[#FFFFF] lg:px-40">
+    <div className="pt-4 pb-16 bg-[#FFFFF] lg:px-40">
       <h2 className="font-exo-2 text-left font-bold text-4xl mb-4 pb-6">
         See it in action
       </h2>
@@ -40,7 +40,7 @@ const Examples: React.FC = () => {
           {examplesData.map((example) => (
             <div
               key={example.id}
-              className="relative w-80 h-80 flex-shrink-0 overflow-hidden cursor-pointer"
+              className="relative w-[40rem] h-[20rem] flex-shrink-0 overflow-hidden cursor-pointer"
               onClick={() => setSelectedExample(example.id)}
             >
               <img
