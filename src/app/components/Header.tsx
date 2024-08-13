@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import examplesData from '../examplesData';
+import Link from 'next/link';
 import '../globals.css';
 
 const filteredExamples = examplesData.filter(example => example.id >= 1 && example.id <= 4);
@@ -31,9 +32,9 @@ const Header: React.FC = () => {
             Simply upload a video, and we'll generate a thumbnail and description for you in seconds. 
             </p>
           </div>
-          <button className="font-familjen-grotesk font-bold py-5 px-9 text-2xl rounded-[10px] bg-[#000] text-white transition duration-300 hover:bg-[#fc2317] shadow-lg mt-52 ml-24">
+          <Link href="/getStarted" className="font-familjen-grotesk font-bold py-5 px-9 text-2xl rounded-[10px] bg-[#000] text-white transition duration-300 hover:bg-[#fc2317] shadow-lg mt-52 ml-24">
             Get started →
-          </button>
+          </Link>
         </div>
         <div className="relative mt-10 flex justify-center">
           <div
